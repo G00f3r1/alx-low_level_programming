@@ -2,7 +2,7 @@
 #include<string.h>
 
 /* this is c code for task 4 */
-int main(void)
+int main(void) /* this isn main function */
 {
 	char mess[60];
 
