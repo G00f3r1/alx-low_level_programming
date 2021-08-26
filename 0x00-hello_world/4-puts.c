@@ -1,12 +1,15 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
 
-/* this is c code for task 4 */
-int main(void) /* this isn main function */
+/**
+ * main - Entry point
+ *
+ * puts: Programming is like building a multilingual puzzle
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
 {
-	char mess[60];
-
-	strcpy(mess, "\"Programming is like building a multilingual puzzle");
-	puts(mess);
-	return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }

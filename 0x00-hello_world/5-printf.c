@@ -1,12 +1,12 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
 
-/* this is c code for task 5 */
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	char mess[60];
-
-	strcpy(mess, "with proper grammar, but the outcome is a piece of art,");
-	puts(mess);
-	return (0);	
+printf("with proper grammar, but the outcome is a piece of art,\n");
+return (0);
 }
