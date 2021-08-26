@@ -1,4 +1,4 @@
-#includ<stdo.h>
+#include<stdo.h>
 int main(void)
 {
 	char mess[50];
