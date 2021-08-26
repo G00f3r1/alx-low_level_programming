@@ -1,12 +1,12 @@
 #include<stdio.h>
 #include<string.h>
 
+/* this is c code for task 5 */
 int main(void)
 {
-	/* the seconde c code */
 	char mess[60];
 
-	strcopy(mess, "with proper grammar, but the outcome is a piece of art,");
+	strcpy(mess, "with proper grammar, but the outcome is a piece of art,");
 	puts(mess);
 	return (0);	
 }
