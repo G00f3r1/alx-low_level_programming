@@ -1,0 +1,17 @@
+#include <stdio.h>
+/**
+ * main - is the function that will execute first
+ *
+ *
+ *
+ * Return: 0 (if successful)
+ */
+int main(void)
+{
+	for (char i = '0';i <= '9';i++)
+		putchar(i);
+	for (char i = 'a';i <= 'f';i++)
+                putchar(i);
+	putchar('\n');
+	return (0);
+}
