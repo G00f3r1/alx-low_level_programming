@@ -4,7 +4,7 @@
 /**
  * main - is the function that will execute first
  *
- * 
+ *
  *
  * Return: 0 (if successful)
  */
