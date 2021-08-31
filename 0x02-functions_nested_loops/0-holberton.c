@@ -1,20 +1,17 @@
 #include "main.h"
 /**
- * main -  prints Holberton
- *
- *
- * Return: Always 0.
- *
+ *main - entry point.
+ *Description: program starts and ends here.
+ *Return: 0 on success.
  */
 int main(void)
 {
-	char school[] = "Holberton";
-	int i;
-
-	for (i = 0; i < 9; i++)
-	{
-		_putchar(school[i]);
-	}
-	_putchar('\n');
-	return (0);
+char *j = "Holberton";
+int i;
+for (i = 0; i <= 8; i++)
+{
+_putchar(j[i]);
+}
+_putchar('\n');
+return (0);
 }
