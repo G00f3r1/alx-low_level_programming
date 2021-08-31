@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char school[] = "Holberton";
+	char school[] = "_putchar";
 	int i;
 
 	for (i = 0; i < 9; i++)
