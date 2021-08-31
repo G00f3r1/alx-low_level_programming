@@ -10,6 +10,7 @@ int main(void)
 {
 	char school[] = "Holberton";
 	int i;
+
 	for (i = 0; i < 9; i++)
 	{
 		_putchar(school[i]);
