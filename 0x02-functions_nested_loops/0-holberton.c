@@ -8,11 +8,13 @@
  */
 int main(void)
 {
-	char school[] = {'H','o','l','b','e','r','t','e','n'};
+	char school[] = "Holberton";
 	int i;
 
 	for (i = 0; i < 9; i++)
+	{
 		_putchar(school[i]);
+	}
 	_putchar('\n');
 	return (0);
 }
