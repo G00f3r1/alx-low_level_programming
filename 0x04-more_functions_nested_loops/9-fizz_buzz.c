@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entery point. 
+ * main - Entery point.
  *
  * Return: 0 (if successful)
  */
 
 int main(void)
-{	
+{
 	int i;
 	for (i = 1; i <= 100; i++)
 	{
@@ -28,7 +28,7 @@ int main(void)
 		}
 		else
 		{
-			printf("%d ",i);
+			printf("%d ", i);
 		}
 	}
 	return (0);
