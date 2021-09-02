@@ -6,23 +6,27 @@
  * Return: void
  */
 
-
-
 void print_triangle(int size)
 {
-	int i, j, k;
+	int i, j, space;
 
-	for (i = 1; i <= size; i++)
+	if (size <= 0)
 	{
-		for (j = size; j > i; j--)
+		_putchar('\n');
+	}
+	else
+	{
+		for (i = 1; i <= size; i++)
 		{
-			printf(" ");
+			for (space = 1; space <= (size - i); space++)
+			{
+				_putchar(' ');
+			}
+			for (j = 1; j <= i; j++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
 		}
-		for (k = 1 ; k <= i; k++)
-		{
-			printf("#");
-		}
-
-		printf("\n");
 	}
 }
