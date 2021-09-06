@@ -4,7 +4,7 @@
  * _strcpy -  that reverses a string.
  * @dest: used to accesse the destination address of the string.
  * @src: used to accesse the address of string
- * Returns: void
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
