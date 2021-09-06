@@ -3,7 +3,7 @@
 /**
  * puts_half - prints half of a string, followed by a new line.
  * @str: used to accesse the address of the string.
- * Returns: void
+ * Return: void
  */
 
 void puts_half(char *str)

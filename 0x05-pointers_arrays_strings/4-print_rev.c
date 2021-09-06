@@ -3,7 +3,7 @@
 /**
  * _puts - prints a string, in reverse, followed by a new line.
  * @s: used to accesse the address of the string.
- * Returns: void
+ * Return: void
  */
 
 void print_rev(char *s)
@@ -17,7 +17,7 @@ void print_rev(char *s)
 	}
 	for (i = len; i >= 0; i--)
 	{
-		_putchar(s[i]);
+		putchar(s[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 }

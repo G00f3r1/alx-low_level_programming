@@ -3,7 +3,7 @@
 /**
  * _puts - prints a string, followed by a new line.
  * @str: used to access the address of the string
- * Returns: void
+ * Return: void
  */
 
 void _puts(char *str)
@@ -17,7 +17,7 @@ void _puts(char *str)
 	}
 	for (i = 0; i < len; i++)
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 	}
-	_putchar('\n');
+	putchar('\n');
 }

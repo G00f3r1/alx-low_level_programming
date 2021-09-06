@@ -3,7 +3,7 @@
 /**
  * puts2 - prints every other character of a string, followed by a new line.
  * @str: used to accesse the address of the string.
- * Returns: void
+ * Return: void
  */
 
 void puts2(char *str)
@@ -23,8 +23,8 @@ void puts2(char *str)
 		}
 		else
 		{
-			_putchar(str[i]);
+			putchar(str[i]);
 		}
 	}
-	_putchar('\n');
+	putchar('\n');
 }
