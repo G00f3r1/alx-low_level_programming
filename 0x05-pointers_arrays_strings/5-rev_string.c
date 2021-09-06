@@ -3,25 +3,32 @@
 /**
  * rev_string -  that reverses a string.
  * @s: used to accesse the address of the string.
- * Return: void
+ * Returns: void
  */
 
 void rev_string(char *s)
 {
-	char *temp = s;
+	char temp, *begin, *end;
 	int len = 0;
-	int i, j;
+	int i;
+
+	begin = s;
+	end = s;
 
 	while (s[len] != '\0')
 	{
 		len++;
 	}
-	for (i = 0; i < len; i++)
+	for (i = 0; i < len - 1; i++)
 	{
-		temp[i] = s[i];
+		end++;
 	}
-	for (i = len - 1, j = 0; i >= 0; i--, j++)
+	for (i = 0; i < len / 2; i++)
 	{
-		s[j] = temp[i];
+		temp = *end;
+		*end = *begin;
+		*begin = temp;
+		begin++;
+		end--;
 	}
 }
