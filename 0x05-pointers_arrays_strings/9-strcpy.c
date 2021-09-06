@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * _strcpy -  copies the string pointed to by src.
+ * _strcpy -  that reverses a string.
  * @dest: used to accesse the destination address of the string.
  * @src: used to accesse the address of string
- * Return: dest
+ * Returns: void
  */
 
 char *_strcpy(char *dest, char *src)
@@ -16,6 +16,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		len++;
 	}
+	len += 1;
 	for (i = 0; i < len; i++)
 	{
 		dest[i] = src[i];
