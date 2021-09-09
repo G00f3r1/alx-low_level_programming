@@ -8,23 +8,22 @@
 
 char *leet(char *str)
 {
-	int len = 0;
-	int i;
-	char arr[] = {'4', '3', '0', '7', '1'};
-	char rep[] = {'A', 'E', 'O', 'T', 'L'};
+	int i = 0;
+	int j;
+	char rep[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
+	char alph[] = {'A', 'a', 'E', 'e', 'O', 'o', 'T', 't', 'L', 'l'};
 
-	while (str[len] != '\0')
+	while (str[i] != '\0')
 	{
-		for (i = 0; i <= len; i++)
+		j = 0;
+		while (j < 10)
 		{
-			if (str[i] == rep[i] || str[i] == rep[i] + 32)
-			{
-				str[i] = arr[i];
-			}
+			if (alph[j] == str[i])
+				str[i] = rep[j];
+			j++;
 		}
-		len++;
+		i++;
 	}
-
 
 	return (str);
 }
