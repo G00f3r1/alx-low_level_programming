@@ -15,7 +15,7 @@ void print_number(int n)
 
 	while (text[i] != '\0')
 	{
-		_putchar(text[i]);
+		putchar(text[i]);
 		i++;
 	}
 }
