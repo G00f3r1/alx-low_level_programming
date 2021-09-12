@@ -13,7 +13,7 @@ void print_number(int n)
 
 	sprintf(text, "%d", n);
 
-	while(text[i] != '\0')
+	while (text[i] != '\0')
 	{
 		_putchar(text[i]);
 		i++;
