@@ -21,7 +21,7 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				occ = &s[--i];
-				break;
+				return (occ);
 			}
 			else
 				s++;
