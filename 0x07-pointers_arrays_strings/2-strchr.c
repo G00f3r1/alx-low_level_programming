@@ -4,7 +4,7 @@
  * _strchr - locates a character in a string.
  * @s: the string to be checked
  * @c: the character to ckeck for
- * Returns: occ if it occurre NULL if it's not
+ * Return: occ if it occurre NULL if it's not
  */
 
 char *_strchr(char *s, char c)
