@@ -9,21 +9,25 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i = 0;
 	int j;
 	char *occ = NULL;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
-		for (j = 0; accept[j]; j++)
+		j = 0;
+		while (accept[j] != '\0')
 		{
-			if (accept[j] == s[i])
+			if (s[i] == accept[j])
 			{
-				occ = &s[i];
+				occ = &s[--i];
 				break;
 			}
+			else
+				s++;
+			j++;
 		}
+		i++;
 	}
-
 	return (occ);
 }
