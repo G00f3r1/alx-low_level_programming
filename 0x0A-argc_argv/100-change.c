@@ -13,7 +13,6 @@ int coin_count(int number);
 
 int main(int argc, char *argv[])
 {
-	int i = 0;
 	int number;
 
 	if (argc != 2)
