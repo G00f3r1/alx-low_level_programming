@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
-	else if (argv[2] < 0)
+	else if (atoi(argv[1]) < 0)
 	{
 		printf("%d\n", 0);
 	}
