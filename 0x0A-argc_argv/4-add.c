@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - adds positive numbers.
@@ -15,8 +16,7 @@ int main(int argc, char *argv[])
 
 	while (i < argc)
 	{
-		if ((*argv[i] >= 'a' && *argv[i] <= 'z')
-				|| (*argv[i] >= 'A' && *argv[i] >= 'Z'))
+		if (!isdigit(*argv[i]))
 		{
 			printf("Error\n");
 			return (1);
