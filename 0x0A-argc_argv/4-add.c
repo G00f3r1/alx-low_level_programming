@@ -27,14 +27,7 @@ int main(int argc, char *argv[])
 			i++;
 		}
 	}
-	if (argc < 2)
-	{
-		printf("%d\n", 0);
-	}
-	else
-	{
-		printf("%d\n", result);
-	}
+	printf("%d\n", result);
 
 	return (0);
 }
