@@ -14,13 +14,6 @@ int main(int argc, char *argv[])
 	int i = 1;
 	int result = 0;
 
-	if (argc < 2)
-	{
-		printf("0\n");
-		return (0);
-	}
-	else
-	{
 	while (i < argc)
 	{
 		if (!isdigit(*argv[i]))
@@ -35,6 +28,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", result);
-	}
 	return (0);
 }
