@@ -14,6 +14,11 @@ int main(int argc, char *argv[])
 	int i = 1;
 	int result = 0;
 
+	if (argc < 2)
+	{
+		printf("0\n");
+		break;
+	}
 	while (i < argc)
 	{
 		if (!isdigit(*argv[i]))
