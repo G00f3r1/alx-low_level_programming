@@ -19,6 +19,8 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
+	else
+	{
 	while (i < argc)
 	{
 		if (!isdigit(*argv[i]))
@@ -33,6 +35,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", result);
-
+	}
 	return (0);
 }
