@@ -8,18 +8,14 @@
  *
  * Return: a pointer to a 2 dimensional array of integers
  */
+
 void free_grid(int **grid, int height)
 {
-	int a;
+	int i;
 
-	if (grid == NULL || height <= 0)
+	for (i = 0; i < height; i++)
 	{
-		return;
-	}
-
-	for (a = height - 1; a >= 0 ; a--)
-	{
-		free(grid[a]);
+		free(grid[i]);
 	}
 	free(grid);
 }
