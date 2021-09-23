@@ -20,11 +20,9 @@ int *array_range(int min, int max)
 	ptr = malloc(sizeof(int) * size);
 	if (ptr == NULL)
 		return (NULL);
-	while (i < size)
+	for (i = 0; i < size; i++)
 	{
-		ptr[i] = min;
-		min++;
-		i++;
+		ptr[i] = min++;
 	}
 	return (ptr);
 }
