@@ -3,6 +3,13 @@
 
 #include <stdio.h>
 
+/**
+ * struct dog - Define a new type struct dog
+ * @name: Name of the dog
+ * @age: Age of the dog
+ * @owner: Owner of the dog
+ */
+
 struct dog
 {
 	char  *name;
