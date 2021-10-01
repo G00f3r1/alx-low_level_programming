@@ -13,6 +13,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 	va_list ap;
 
+	if (n > 0)
+	{
 	va_start(ap, n);
 	for (i = 0; i < n; i++)
 	{
@@ -30,4 +32,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 	va_end(ap);
+	}
 }
