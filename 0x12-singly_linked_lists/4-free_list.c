@@ -1,11 +1,10 @@
 #include "lists.h"
-
 /**
- * free_list - function that frees a list_t list.
- * @head: the list to be cleard
- * Return: void
- */
-
+  *free_list - frees a list_t
+  *@head: pointer to head of list.
+  *
+  *Return: void
+  */
 void free_list(list_t *head)
 {
 	list_t *temp;
@@ -13,8 +12,8 @@ void free_list(list_t *head)
 	while (head != NULL)
 	{
 		temp = head;
-		head = head->next;
 		free(temp->str);
+		head = head->next;
 		free(temp);
 	}
 }
