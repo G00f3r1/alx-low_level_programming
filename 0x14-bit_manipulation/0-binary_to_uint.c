@@ -8,40 +8,26 @@
   *
   * Return: The positive number converted from a binary
   */
+
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int len = 0, count = 0, sum = 0;
+	unsigned int num = 0, mult = 1;
+	int len;
 
-	if (b == NULL)
+	if (b == '\0')
 		return (0);
 
-	len = _strlen(b);
-	while (len--)
+	for (len = 0; b[len];)
+		len++;
+
+	for (len -= 1; len >= 0; len--)
 	{
-		if (b[len] != 48 && b[len] != 49)
+		if (b[len] != '0' && b[len] != '1')
 			return (0);
 
-		if (b[len] == 49)
-			sum += 1 << count;
-
-		count++;
+		num += (b[len] - '0') * mult;
+		mult *= 2;
 	}
 
-	return (sum);
-}
-
-/**
-  * _strlen - Returns the length of a string
-  * @s: String to count
-  *
-  * Return: String length
-  */
-int _strlen(const char *s)
-{
-	int c = 0;
-
-	while (s[c])
-		c++;
-
-	return (c);
+	return (num);
 }
