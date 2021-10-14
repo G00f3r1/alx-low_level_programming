@@ -8,26 +8,23 @@
   *
   * Return: The positive number converted from a binary
   */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int num = 0, mult = 1;
-	int len;
+	unsigned int i, int_n;
 
-	if (b == '\0')
+	int_n = 0;
+	i = 0;
+	if (!b)
 		return (0);
 
-	for (len = 0; b[len];)
-		len++;
-
-	for (len -= 1; len >= 0; len--)
+	while (b[i] != '\0')
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-
-		num += (b[len] - '0') * mult;
-		mult *= 2;
+		int_n <<= 1;
+		if (b[i] & 1)
+			int_n += 1;
+		i += 1;
 	}
-
-	return (num);
+	return (int_n);
 }
