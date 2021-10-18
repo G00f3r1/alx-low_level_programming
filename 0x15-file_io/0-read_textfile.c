@@ -9,22 +9,23 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buf = malloc(letters);
+	char *buff = malloc(letters);
 	int fd;
 	ssize_t count;
 
-	if (filename == NULL)
+	if (!buff)
+		return (0);
+	if (!filename)
 		return (0);
 
-	fd = open(filename, O_RDONLY);
+	fd = open(filename, O_RDONLY, 0600);
 	if (fd == -1)
 		return (0);
 
-	read(fd, buf, letters);
-	close(fd);
+	count = read(fd, buf, letters);
+	write(STDOUT_FILENO, buff, count);
 
-	printf("%s", buf);
-	count = strlen(buf);
-
+	free(buff);
+	cose(fd);
 	return (count);
 }
