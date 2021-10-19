@@ -1,5 +1,6 @@
 #include "main.h"
 
+void copy_file(const char *src, const char *dest);
 /**
   * main - Entry point
   * @argc: The argument count
