@@ -22,10 +22,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 		return (0);
 
-	count = read(fd, buf, letters);
+	count = read(fd, buff, letters);
 	write(STDOUT_FILENO, buff, count);
 
 	free(buff);
-	cose(fd);
+	close(fd);
 	return (count);
 }
