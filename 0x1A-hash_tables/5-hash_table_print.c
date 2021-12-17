@@ -14,24 +14,26 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *item = NULL;
 	int flag = 0;
 
+	if (ht == NULL)
+		return;
 	printf("{");
 	while (i < ht->size)
 	{
-		item = ht->array[i];
-		while (item)
+		if (ht->array[i] != NULL)
 		{
-			printf("'%s': '%s'", item->key, item->value);
-			if (item->next)
+			if (flag == 1)
 				printf(", ");
-			item = item->next;
-		}
-		while (!(ht->array[i + 1]))
-			i++;
+			item = ht->array[i];
 
-		if (flag && i < ht->size)
-			printf(", ");
-		else
+			while (item)
+			{
+				printf("'%s': '%s'", item->key, item->value);
+				if (item->next)
+					printf(", ");
+				item = item->next;
+			}
 			flag = 1;
+		}
 		i++;
 	}
 	printf("}\n");
